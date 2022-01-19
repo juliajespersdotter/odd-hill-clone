@@ -1,0 +1,751 @@
+:root{
+    --main-color: #FCFCFC;
+	--font-color: #121212;
+    --link-color: #101AEA;
+	--footer-color: #FA301E;
+    --accent-color: #FFDD35;
+    --hover-color: #5e5d5d41;
+}
+
+/*Typography*/
+
+@font-face {
+    font-family: "Averta Std-Regular";
+    src: url("../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Regular.ttf");
+}
+@font-face {
+    font-family: "Averta Std-Semibold";
+    src: url("../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Semibold.ttf");
+}
+@font-face {
+    font-family: "Averta Std-Thin" ;
+    src: url("../fonts/Averta_Standard-www.Dfonts.org/AvertaStd-Thin.ttf");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Averta Std-Regular";
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+
+p{
+    padding: 1rem;
+}
+
+h2{
+    max-width: 100%;
+}
+
+h4{
+    letter-spacing: -2px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.logo-1{
+    font-family: "Averta std-Semibold"
+}
+
+.hero-text{
+    font-family:"Averta std-Semibold";
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+/* Nav Styles */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-1{
+    text-align:center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style-type: none;
+    font-family: "Averta Std-Semibold";
+    font-size: 0.9rem;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:hover{
+    color:var(--hover-color);
+}
+
+.lang{
+    font-family: "Averta Std-Regular";
+}
+
+.bold{
+    font-family:"Averta Std-Semibold";
+}
+
+/* Hero */
+
+.hero-text{
+    text-align: left;
+    padding: 5%;
+}
+
+.yellow-button{
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.7rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    width: 18rem;
+    text-align: center;
+    background-color:var(--accent-color);
+}
+
+.yellow-button a{
+    text-decoration: none;
+    color:var(--font-color);
+}
+
+/* Section Projects*/
+
+.projects{
+    margin: 0;
+    padding: 5%;
+}
+
+.projects-img{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.front{
+    display: flex;
+    align-items: center;
+}
+
+.front .arrow{
+    margin-bottom: 3rem;
+    width: 2rem;
+    height: auto;
+}
+
+.img-text{
+    font-family:"Averta std-Semibold";
+    color:var(--font-color);
+    text-decoration:underline;
+    font-size: 1.1rem;
+}
+
+.projects h4{
+    padding: 0;
+    margin: 0;
+    padding-left: 3rem;
+}
+
+.project-columns{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-text{
+    padding-top: 1rem;
+}
+
+.arrow-hidden{
+    display:none;
+}
+
+.project{
+    width: 50%;
+}
+
+.project p{
+    padding: 1%;
+}
+
+.project p a{
+    font-size: 1.1rem;
+}
+
+.rainbow{
+    width: 100%;
+}
+
+.black-white{
+    width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+.blue-button{
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    padding: 1.7rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    width: 18rem;
+    text-align: center;
+    color: #fff;
+    background-color:var(--link-color);
+}
+
+/* Section About */
+
+.about{
+    color: #fff;
+    background-color:var(--link-color);
+    padding-bottom: 3rem;
+}
+.about h3{
+    font-family: "Averta std-Regular";
+    padding: 4%;
+    padding-top: 3rem;
+}
+
+.about p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    line-height: 1.5;
+}
+
+.white-button{
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1.7rem;
+    border-radius: 3rem 3rem 3rem 3rem;
+    width: 18rem;
+    text-align: center;
+    color: #fff;
+    background-color:var(--link-color);
+    border: 1px solid #fff;
+}
+/* Section Articles */
+
+.articles{
+    padding: 0.7rem;
+}
+
+.article-heading{
+    margin-top: 7rem;
+    padding-left: 1rem;
+}
+
+.articles .padding{
+    font-size: 1.2rem;
+    padding: 0;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+articles div{
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+div p{
+    display: inline;
+    width: 50%;
+    padding: 0;
+    padding-left: 1rem;
+}
+
+.articles .img-text{
+    font-size: 1.2rem;
+}
+
+.articles .width100{
+    width: 100%;
+    margin: auto;
+}
+
+.arrow{
+    margin-top: 1rem;
+    width: 2rem;
+    height: auto;
+}
+
+
+/* Footer */
+
+footer{
+    background-color:var(--footer-color);
+}
+
+.contact-us{
+    color: #fff;
+    background-color:var(--font-color);
+}
+
+.contact{
+    padding: 1rem;
+}
+.contact h3{
+    padding-top: 4rem;
+}
+
+.contact h1{
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+
+.contact a{
+    color:var(--font-color);
+}
+
+.footer-about{
+    padding: 1rem;
+}
+
+.logo-2{
+    padding-top: 3.5rem;
+    font-size: 2rem;
+}
+
+.footer-about p{
+    line-height: 1.7;
+    padding: 0;
+}
+
+.footer-links ul{
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0;
+    margin: 1rem;
+}
+
+.footer-links li{
+    background-color:var(--accent-color);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+.social-media{
+    width: 1.5rem;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.adress{
+    width: 30%;
+    padding-left: 2%;
+}
+
+.contact-info > div p{
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    line-height: 0.7;
+}
+
+.contact-info a{
+    color: #fff;
+}
+
+.email-phone a{
+    font-size: 0.9rem;
+    font-family: "Averta Std-Semibold";
+    text-decoration: underline;
+    color:#fff;
+    padding-right: 5rem;
+}
+
+form {
+    padding: 1rem;
+}
+
+.email{
+    background-color:var(--font-color);
+    color:var(--main-color);
+    margin: auto;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#consent{
+    width: 3rem;
+    padding: 2rem;
+    height: 2rem;
+}
+
+#save{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+label a {
+    color:var(--main-color);
+}
+
+button{
+    font-family: "Averta Std-Semibold";
+    width: 12rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 2rem 2rem 2rem 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color:var(--font-color);
+    background-color:var(--accent-color);
+}
+
+.etc{
+    background-color: black;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.etc a{
+    padding: 1rem;
+    font-size: 1.1rem;
+    color:var(--main-color);
+}
+
+@media only screen and (min-width: 720px){
+    header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    .logo-1{
+        font-size: 1.5rem;
+        width: 20%;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav ul{
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    nav ul a{
+        font-size: 0.9rem;
+    }
+
+    .lang{
+        padding-left: 1rem;
+    }
+
+    .hero-text{
+        font-size: 3rem;
+        padding-top: 0;
+        padding-left: 2rem;
+        width: 80%;
+    }
+
+    .yellow-button{
+        display: block;
+        margin: 1%;
+        margin-left: 2rem;
+    }
+
+    .front p{
+        padding-left: 1.5rem;
+        padding-top: 0;
+    }
+
+    .front .img-text{
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+
+    .project-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .project-text p{
+        width: 80%;
+        padding: 5%;
+    }
+
+    .arrow-hidden{
+        display: inline;
+        margin-bottom: 2rem;
+        width: 2rem;
+        height: auto;
+    }
+
+    .hidden{
+        display: inline;
+    }
+
+    .blue-button{
+       display: block;
+       margin: 1rem;
+       margin-top: 4rem;
+       margin-bottom: 7rem;
+       width: 12rem;
+    }
+
+    .about h3{
+        padding-bottom: 1rem;
+        padding-top: 4rem;
+    }
+
+    .white-button{
+        margin: 1rem;
+        margin-top: 4rem;
+    }
+
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articles article{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .articles .blue-button{
+        margin-left: 8rem;
+        width: 16rem;
+    }
+
+    .contact{
+        padding: 8%;
+    }
+
+    .contact h3{
+        padding-top: 0;
+    }
+
+    .contact h1{
+        width: 50%;
+    }
+
+    .footer-about{
+        width: 80%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .email{
+        width: 100%;
+        margin-right: 50%;
+    }
+
+    button{
+        font-size: 1.2rem;
+        width: 14rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    main{
+        font-size: 1.5rem;
+    }
+    header{
+        justify-content: space-evenly;
+    }
+    .logo-1{
+        width: 20%;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    nav ul{
+        width: 100%;
+        justify-content: flex-end;
+        gap: 40px;
+        padding-right: 10%;
+    }
+
+    ul li a{
+        font-size: 1.1rem;
+    }
+
+    .hero-text{
+        font-size: 4.5rem;
+        width: 70%;
+        padding-left: 4rem;
+        padding-bottom: 0;
+    }
+
+    .yellow-button{
+        margin-left: 4.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+    
+    .front .img-text{
+        font-size: 2rem;
+    }
+
+    .projects .img-text{
+       font-size: 2rem;
+    }
+
+    .projects p{
+        padding-top: 0;
+    }
+
+    .about{
+        padding: 6%;
+    }
+
+    .about h3{
+        font-size: 1.3rem;
+        padding-left: 7rem;
+    }
+
+    .about p{
+        font-size: 2.4rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .white-button{
+        margin-left: 10%;
+    }
+
+    .articles{
+        padding: 4%;
+    }
+
+    .article-heading{
+        padding-left: 6%;
+        margin-bottom: 0;
+    }
+
+    .articles article{
+        width: 30%;
+        gap: 3rem;
+    }
+
+    .articles .padding{
+        padding-left: 0;
+        line-height: 1.5;
+    }
+
+    .articles .img-text{
+        font-size: 1.5rem;
+    }
+
+    .contact{
+        margin: 0 auto;
+        padding-left: 15%;
+    }
+
+    .contact h1{
+        font-size: 4rem;
+        width: 70%;
+        line-height: 1.2;
+    }
+
+    .logo-2 {
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+        padding-bottom: 2%;
+    }
+
+    .contact-us{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-about{
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .footer-links{
+        width: 100%;
+        margin-left: 5%;
+        order: 4;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        width: 22%;
+    }
+
+    .adress{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .adress a, .email-phone a{
+        font-size: 1.2rem;
+        line-height: 1.5;
+        
+    }
+
+    .email-phone{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    form{
+        width: 20%;
+        margin-top: 6%;
+    }
+}
